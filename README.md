@@ -1,5 +1,6 @@
 # standalone login server for tibia 12x
 
+the folder called `log` make a record from everything input and output
 note: to work graceful, you need to setup the config.php file with MySQL credentials and make servername match with config.lua or will not work.
 
 ## actions
