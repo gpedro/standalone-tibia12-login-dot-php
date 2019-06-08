@@ -5,13 +5,17 @@ note: to work graceful, you need to setup the config.php file with MySQL credent
 
 ## actions
 - cacheinfo
-    show statistics on top of client.
+
+show statistics on top of client.
 
 - eventschedule
-    show events scheduleds on bottom of client
+
+show events scheduleds on bottom of client
 
 - boostedcreature
-    show boosted creature on right side of eventschedule
+
+show boosted creature on right side of eventschedule
 
 - login
-    just login. xD
+
+just login. xD
