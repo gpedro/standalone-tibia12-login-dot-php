@@ -27,7 +27,8 @@ switch ($input->type ?? '') {
         break;
 
     case 'boostedcreature':
-        global $boostedcreature;
+        $boostedcreature["boostedcreature"] = true;
+		$boostedcreature["raceid"] = 15;
         echo json_encode($boostedcreature);
         break;
 
