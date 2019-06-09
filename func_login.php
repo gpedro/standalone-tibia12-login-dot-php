@@ -53,15 +53,13 @@ function login($obj) {
                 'ismale' => $player['sex'] === 1,
                 'tutorial' => false,
                 'vocation' => parse_vocation($player),
-                'outfitid' => $player['looktype'],
-                'headcolor' => $player['lookhead'],
-                'torsocolor' => $player['lookbody'],
-                'legscolor' => $player['looklegs'],
-                'detailcolor' => $player['lookfeet'],
-                'addonsflags' => $player['lookaddons']
-                /*
-                FIX: add level, vocation, outfitid, headcolor, torsocolor, legscolor, detailcolor, addonsflags
-                */
+                'outfitid' => intval($player['looktype']),
+                'headcolor' => intval($player['lookhead']),
+                'torsocolor' => intval($player['lookbody']),
+                'legscolor' => intval($player['looklegs']),
+                'detailcolor' => intval($player['lookfeet']),
+                'addonsflags' => intval($player['lookaddons'])
+                // 'ishidden' => false
             );
         }
         //error_log("= SESSION KEY: " . $response['session']['sessionkey']);
