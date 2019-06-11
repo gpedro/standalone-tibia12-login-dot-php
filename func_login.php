@@ -35,6 +35,7 @@ function login($obj) {
         $response['playdata']['worlds'][] = [
             'id' => 0,
             'name' => $gameserver['name'],
+            'pvptype' => 0, // thanks @FearLucien
             'externaladdress' => $gameserver['ip'],
             'externalport' => $gameserver['port'],
             'previewstate' => 0,
